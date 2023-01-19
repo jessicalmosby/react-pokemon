@@ -1,5 +1,7 @@
-import React from 'react';
-
-export default function fetchPokemon() {
-  return <div>fetchPokemon</div>;
-}
+export async function fetchInitialPokemon() {
+  const resp = await fetch('https://alchemy-pokedex.herokuapp.com/');
+  console.log(resp);
+  const data = await resp.json();
+  console.log(data);
+  return data.results;
+} 
