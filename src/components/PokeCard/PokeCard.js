@@ -5,7 +5,9 @@ export default function PokeCard({ pokemon, loading }) {
   return (
     <div className="poke-card">
       {pokemon.map((poke) => (
-        <p key={poke._id}>{poke.pokemon}</p>
+        <p key={poke._id}>
+          {poke.pokemon} {poke.type_1} {poke.type_2}
+        </p>
       ))}
     </div>
   );

@@ -1,4 +1,3 @@
-import { type } from '@testing-library/user-event/dist/type/index.js';
 import React from 'react';
 
 export default function Select({ types, handleTypeChange }) {
