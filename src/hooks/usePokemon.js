@@ -6,6 +6,7 @@ export function usePokemon() {
   const [loading, setLoading] = useState(true);
   const [types, setTypes] = useState([]);
   const [query, setQuery] = useState('');
+  const [selectedType, setSelectedType] = useState('all');
 
   useEffect(() => {
     setLoading(true);
@@ -28,7 +29,7 @@ export function usePokemon() {
 
   const handleTypeChange = async (type) => {
     setLoading(true);
-    console.log('handling type change!!', type);
+    setSelectedType(type);
     const data = await fetchPokemon(type, query);
     setPokemon(data);
     setLoading(false);
@@ -36,7 +37,7 @@ export function usePokemon() {
 
   const handleButtonClick = async () => {
     setLoading(true);
-    const data = await fetchPokemon(query);
+    const data = await fetchPokemon(selectedType, query);
     setPokemon(data);
     setLoading(false);
   };
