@@ -27,6 +27,7 @@ export function usePokemon() {
 
   const handleTypeChange = async (type) => {
     setLoading(true);
+    console.log('handling type change!!', type);
     const data = await fetchPokemon(type);
     setPokemon(data);
     setLoading(false);

@@ -5,6 +5,7 @@ import Select from '../Controls/Select';
 
 export default function Main() {
   const { pokemon, loading, types, handleTypeChange } = usePokemon();
+
   return (
     <main>
       <Select types={types} handleTypeChange={handleTypeChange} />
