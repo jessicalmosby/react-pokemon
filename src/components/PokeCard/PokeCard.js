@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function PokeCard({ pokemon, loading, types }) {
+export default function PokeCard({ pokemon, loading }) {
   if (loading) return <p>Please wait longer...</p>;
   return (
     <div className="poke-card">
