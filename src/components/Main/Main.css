@@ -1,5 +1,14 @@
 .all {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
 }
