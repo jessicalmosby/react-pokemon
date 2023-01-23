@@ -1,11 +1,9 @@
 .poke-card {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1em;
-  width: 10%;
+    height: 200px;
+    justify-content: flex-start;
+    text-align: center;
+    width: 200px;
 }
 .loader {
   position: relative;

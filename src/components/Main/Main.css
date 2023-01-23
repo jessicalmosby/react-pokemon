@@ -1,4 +1,5 @@
-/* main {
-  display: flex;
+.all {
   flex-wrap: wrap;
-} */
+  justify-content: center;
+  margin-top: 20px;
+}
