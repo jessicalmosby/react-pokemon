@@ -3,7 +3,6 @@ import './PokeCard.css';
 
 export default function PokeCard({ pokemon, loading }) {
   if (loading) return <p className="loader">Loading</p>;
-  console.log(pokemon);
   return (
     <div className="poke-card">
       <p>{pokemon.pokemon}</p>
