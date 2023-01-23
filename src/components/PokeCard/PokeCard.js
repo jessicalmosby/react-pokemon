@@ -2,7 +2,7 @@ import React from 'react';
 import './PokeCard.css';
 
 export default function PokeCard({ pokemon, loading }) {
-  if (loading) return <p>Please wait longer...</p>;
+  if (loading) return <p className="loader">Loading</p>;
   return (
     <div className="poke-card">
       {pokemon.map((poke) => (
