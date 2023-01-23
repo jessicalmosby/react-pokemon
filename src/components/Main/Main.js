@@ -16,7 +16,9 @@ export default function Main() {
         <Query inputVale={query} changeHandler={setQuery} handleButtonClick={handleButtonClick} />
       </div>
       <div className="all">
-        <PokeCard pokemon={pokemon} loading={loading} />
+        {pokemon.map((poke) => (
+          <PokeCard key={poke._id} pokemon={pokemon} loading ={loading} />
+        ))}
       </div>
     </main>
   );
