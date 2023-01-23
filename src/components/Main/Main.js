@@ -11,9 +11,10 @@ export default function Main() {
 
   return (
     <main>
+      <h1>Pokemon: Gotta catch em all! </h1>
       <div className="filter">
-        <Select types={types} handleTypeChange={handleTypeChange} />
         <Query inputVale={query} changeHandler={setQuery} handleButtonClick={handleButtonClick} />
+        <Select types={types} handleTypeChange={handleTypeChange} />
       </div>
       <div className="all">
         <PokeCard pokemon={pokemon} loading={loading} />
